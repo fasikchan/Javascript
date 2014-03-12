@@ -1,18 +1,17 @@
 $(function() {
 
-  var speed = 500;
-  var snake = [];
-  var l = 0;
+  var speed = 2000;
+  var snake = []
 
   function fieldGenerate() {
-    var x = 1;
-    var y = 1;
+    var x = 0;
+    var y = 0;
     for( ;y <= 35; ) {
       $(".field").append('<div class="block" id="'+ x +'-'+ y +'"></div>');
       x++;
       if(x > 35) {
         y++;
-        x = 1;
+        x = 0;
       }
     }
   }
@@ -33,17 +32,13 @@ $(function() {
     $("#"+ x +"-"+ y +"").addClass("snake");
   }
 
-  function snakeAdd() {
-    snake[l + 1] = snake[l];
-    $(snake[l + 1]).addClass("snake");
-    l += 1;
+  function snakeAdd(x, y) {
+    $("#"+x+"-"+y+"").addClass("snake")
   }
-
 
   function rightMove() {
     var y = getY();
     var x = getX();
-    getId();
     $("#"+x+"-"+y+"").removeClass("snake")
     x += 1;
     $("#"+x+"-"+y+"").addClass("snake")
