@@ -1,0 +1,31 @@
+.field {
+  float: left;
+  margin-left: 5px;
+  border: solid 2px black;
+  width: 650px;
+  height: 650px;
+}
+
+.snake {
+  margin: 0;
+  position: relative;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+}
+
+.message {
+  float: left;
+  margin-left: 20px;
+  border: solid 2px black;
+  width: 150px;
+  height: 80px;
+}
+
+.prey {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}

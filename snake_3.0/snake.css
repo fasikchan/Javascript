@@ -1,0 +1,38 @@
+.field {
+  width: 350px;
+  height: 350px;
+  border: solid 1px gray;
+  float:left;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.block {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  float:left;
+}
+
+.snake {
+  background-color: green;
+  border-radius: 2px 2px 2px 2px;
+}
+
+.prey {
+  background-color: red;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.message {
+  font-family: Arial;
+  font-size: 14px;
+  float: left;
+  margin-left: 10px;
+  border: solid 1px gray;
+  width: 150px;
+  height: 80px;
+  border-radius: 3px 3px 3px 3px;
+}
+span {
+  margin-left: 8px;
+}
