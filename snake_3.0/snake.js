@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var field = {
   x: 50,
   y: 50,
@@ -31,6 +32,5 @@ var moving = {
 }
 $(function() {
 
-  field.generate()
-
-});
+  field.generate();
+}

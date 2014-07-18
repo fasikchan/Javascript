@@ -1,6 +1,11 @@
 .field {
+<<<<<<< HEAD
   width: 500px;
   height: 500px;
+=======
+  width: 360px;
+  height: 360px;
+>>>>>>> 3d1e131deaf9dbdf03e6217d77585be4bf3eebe5
   border: solid 1px gray;
   float:left;
   border-radius: 3px 3px 3px 3px;
