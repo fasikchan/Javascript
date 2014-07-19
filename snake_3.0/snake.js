@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-var field = {
+var Field = {
   x: 50,
   y: 50,
 
@@ -17,20 +16,25 @@ var field = {
   },
 }
 
-var snake = {
+var Snake = {
   get: [],
 
   add: function() {
     var block = $("#x" + parseInt(Math.random() * 51) + "y" + parseInt(Math.random() * 51) + "")
     block.addClass('snake');
     this.get.push(block.attr("id"));
+  },
+
+  moving: {
+    left: function() {
+      console.log(Snake.get)
+    }
   }
 }
 
-var moving = {
-  left
-}
-$(function() {
 
-  field.generate();
-}
+
+$(function() {
+  Field.generate();
+
+});
