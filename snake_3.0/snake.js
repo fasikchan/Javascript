@@ -9,7 +9,7 @@ var Field = {
           x = 1;
           y++;
         };
-        $(".field").append('<div class="block" id="x' + x + 'y' + y +'"></div>');
+        $(".field").append('<div class="block" id="' + x + 'x' + y + 'y"></div>');
         x++;
       }
     }
@@ -19,17 +19,27 @@ var Field = {
 var Snake = {
   get: [],
 
-  add: function() {
-    var block = $("#x" + parseInt(Math.random() * 51) + "y" + parseInt(Math.random() * 51) + "")
+  create: function() {
+    var block = $("#" + parseInt(Math.random() * 51) + "x" + parseInt(Math.random() * 51) + "y")
     block.addClass('snake');
     this.get.push(block.attr("id"));
   },
 
+  x: function() {
+    x = parseInt(Snake.get[0].match(/\d+(?=x)/));
+    return x
+  },
+
+  y: function() {
+    y = parseInt(Snake.get[0].match(/\d+(?=y)/));
+    return y
+  },
+
   moving: {
     left: function() {
-      console.log(Snake.get)
-    }
-  }
+
+    },
+  },
 }
 
 
