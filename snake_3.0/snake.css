@@ -1,9 +1,9 @@
 .field {
   width: 500px;
   height: 500px;
-  border: solid 1px gray;
+  border: solid 2px gray;
   float:left;
-  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 .block {
@@ -14,25 +14,35 @@
 }
 
 .snake {
+  color: white;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
   background-color: green;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
 .prey {
+  width: 18px;
+  height: 18px;
   background-color: red;
-  border-radius: 5px 5px 5px 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
 .message {
+  padding: 10px 10px 10px 10px;
   font-family: Arial;
-  font-size: 14px;
+  font-size: 30px;
+  font-weight: bolder;
   float: left;
   margin-left: 10px;
-  border: solid 1px gray;
-  width: 150px;
-  height: 80px;
-  border-radius: 3px 3px 3px 3px;
+  border: solid 2px gray;
+  width: 140px;
+  height: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 3px black;
 }
-span {
-  margin-left: 8px;фы
-}
+
