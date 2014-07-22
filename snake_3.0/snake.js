@@ -24,9 +24,11 @@ var Field = {
       length = Snake.get.length - 1
       block = $('#'+ Snake.get[length])
       block.removeClass('snake');
+
       for (i = length; i > 0; i--) {
         Snake.get[i] = Snake.get[i - 1]
       }
+
       Snake.get[0] = next_block.attr('id');
       next_block.addClass('snake');
     }
