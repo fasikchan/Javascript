@@ -1,0 +1,44 @@
+#field {
+  border: solid 1px darkgray;
+  float:left;
+  position: relative;
+}
+
+.block {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: darkgray;
+  border: 1px solid white;
+}
+
+.block2{
+    background: #990000;
+}
+#score{
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-family: arial;
+    font-size: 20px;
+    padding: 5px;
+    color: darkgrey;
+    float: left;
+    border: 1px solid darkgrey;
+    border-left: 0;
+    text-align: right;
+}
+#restart{
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-family: arial;
+    font-size: 20px;
+    padding: 5px;
+    color: darkgrey;
+    float: left;
+    border: 1px solid #990000;
+    border-left: 0;
+    text-align: center;
+    cursor: pointer;
+}

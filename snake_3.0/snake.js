@@ -1,8 +1,7 @@
 var Field = {
   x: 25,
   y: 25,
-  speed: 80,
-
+  speed: 100,
   generate: function() {
     $(".message").html("<span>Score: "+ (Snake.get.length) +"</span>")
     if ($(".field").children()[0] == null) {
@@ -37,6 +36,7 @@ var Field = {
       next_block.removeClass('prey');
       Snake.get.unshift(next_block.attr('id'));
       next_block.addClass('snake');
+      this.speed -= 0.5
       $(".message").html("<span>Score: "+ (Snake.get.length - 1) +"</span>")
       Prey.generate();
     }
@@ -87,6 +87,7 @@ var Prey = {
     var block = $("#" + (parseInt(Math.random() * 25) + 1) + "x" + (parseInt(Math.random() * 25) + 1) + "y");
     if(!block.hasClass('snake')) {
       block.addClass('prey');
+
     } else {
       this.generate();
     }
